@@ -68,12 +68,39 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .link {
   text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ----- Studio-Portfolio text styles -----*/
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+  margin-bottom: 72px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  margin-bottom: 8px;
+}
+
+.text {
+  color: var(--primary-text-color);
 }
 
 /*---------- Container ----------*/
@@ -107,21 +134,20 @@ img {
 
 .nav-logo {
   font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  display: flex;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--logo-color-one);
-  text-transform: uppercase;
-
-  display: flex;
   margin-right: 76px;
 }
 
 /* ---------- Navigation ---------- */
 .site-nav {
-  font-weight: 500;
   display: flex;
+  font-weight: 500;
   gap: 40px;
 }
 
@@ -155,33 +181,6 @@ img {
   color: var(--active-color);
 }
 
-/* ----- Studio-Portfolio text styles -----*/
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--title-text-color);
-  margin-bottom: 72px;
-}
-
-.title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--title-text-color);
-  margin-bottom: 8px;
-}
-
-.text {
-  color: var(--primary-text-color);
-}
-
-.list {
-  list-style: none;
-}
-
 /* ---------- Studio ---------- */
 .hero {
   background-color: var(--background-footer-color);
@@ -205,8 +204,8 @@ img {
   font-size: 56px;
   line-height: 1.1;
   text-align: center;
-  color: var(--title-color);
   margin: 0 auto;
+  color: var(--title-color);
   width: 494px;
   margin-bottom: 48px;
 }
@@ -222,10 +221,10 @@ img {
 
   display: flex;
   margin: 0 auto;
+  border: none;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: none;
 }
 
 .button.primary:hover,
@@ -233,7 +232,7 @@ img {
   background-color: var(--active-color);
 }
 
-/* ---------- Categories ----------- */
+/* ---------- Feature ----------- */
 .feature {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -252,13 +251,13 @@ img {
 
 .icon-bg {
   display: flex;
-  background-color: var(--background-team-color);
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   margin-bottom: 8px;
   width: 264px;
   height: 112px;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--background-team-color);
 }
 
 /* ---------- Service ------------ */
@@ -464,13 +463,13 @@ img {
 
 .footer-logo {
   font-family: 'Raleway';
+  text-transform: uppercase;
+  display: flex;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--logo-color-two);
-  text-transform: uppercase;
-  display: flex;
   margin-bottom: 16px;
 }
 
