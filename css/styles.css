@@ -25,7 +25,9 @@
   --primary-text-color: #434455;
   --team-list-background: #ffffff;
   --footer-text-color: #e7e9fc;
+  --soc-icon-color: #f4f4fd;
   --soc-link-bg: #4d5ae5;
+  --customers-br-color: #8e8f99;
 }
 
 /* ---------- Hidden ---------- */
@@ -318,18 +320,21 @@ img {
 .team .soc-item {
   border-radius: 50%;
   background-color: var(--soc-link-bg);
+  width: 40px;
+  height: 40px;
 }
 
 .team .link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
+  color: var(--soc-icon-color);
 }
 
 .icon-soc-team {
-  fill: #f4f4fd;
+  fill: currentColor;
 }
 
 .team .soc-item:focus,
@@ -363,22 +368,19 @@ img {
   align-items: center;
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--customers-br-color);
   border-radius: 4px;
+  color: var(--customers-br-color);
 }
 
 .customers-container .icon-company {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
 .customers-container .link:focus,
 .customers-container .link:hover {
   border-color: var(--active-color);
-}
-
-.customers-container .link:focus,
-.customers-container .link:hover .icon-company {
-  fill: var(--active-color);
+  color: var(--active-color);
 }
 
 /* ---------- Portfolio ---------- */
@@ -495,23 +497,21 @@ img {
 .footer .soc-item {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.team .soc-item {
-  border-radius: 50%;
-  background: var(--soc-link-bg);
+  width: 40px;
+  height: 40px;
 }
 
 .soc-list-footer .link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
+  color: var(--soc-icon-color);
 }
 
 .icon-soc {
-  fill: #f4f4fd;
+  fill: currentColor;
 }
 
 .footer .soc-item:focus,
